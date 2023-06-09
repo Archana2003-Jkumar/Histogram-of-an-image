@@ -49,6 +49,14 @@ plt.xlabel("greyscale value")
 plt.ylabel("pixel count")
 plt.stem(hist)
 plt.show()
+
+
+plt.figure()
+plt.title("Histogram for BGR image")
+plt.xlabel("BGR intensity value")
+plt.ylabel("Pixel Count")
+plt.stem(hist1)
+plt.show()
 ```
 # Write the code to perform histogram equalization of the image. 
 ```
