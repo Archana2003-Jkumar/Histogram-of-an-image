@@ -60,9 +60,9 @@ plt.show()
 ```
 # Write the code to perform histogram equalization of the image. 
 ```
-img = cv2.imread('cbw.webp', cv2.IMREAD_GRAYSCALE)
-   equalized_img = cv2.equalizeHist(img)
-    cv2.imshow('Original Image', img)
+   gimg = cv2.imread("cbw.webp",0)
+   equalized_img = cv2.equalizeHist(gimg)
+    cv2.imshow('Original Image',gimg)
     cv2.imshow('Equalized Image', equalized_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
