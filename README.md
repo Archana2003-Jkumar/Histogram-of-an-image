@@ -27,27 +27,20 @@ import matplotlib.pyplot as plt
 ```
 # Write your code to find the histogram of gray scale image and color image channels.
 ```
+import cv2
+import matplotlib.pyplot as plt
+
 gimage = cv2.imread("cbw.webp")
 cimage = cv2.imread(cc.jpg",-1)
 cv2.imshow("Gray Image",gimage)
 cv2.imshow("Colour Image",cimage)
+hist = cv2.calcHist([gimage],[0],None,[256],[0,256])
+hist1 = cv2.calcHist([cimage],[1],None,[256],[0,256])
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
-
-
-hist = cv2.calcHist([gimage],[0],None,[256],[0,256])
-hist1 = cv2.calcHist([cimage],[1],None,[256],[0,256])
-import cv2
-import matplotlib.pyplot as plt
-gimage = cv2.imread("cbw.webp")
-cimage = cv2.imread("Documents/Sem4/DIP/Exp4/cc.jpg")
-plt.imshow(cimage)
-plt.show()
-plt.imshow(gimage)
-plt.show()
 ```
+
 # Display the histogram of gray scale image and any one channel histogram from color image
 ```
 plt.figure()
